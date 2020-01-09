@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="EPQ" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/EPQ" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/John/Desktop/EPQ/libraries/SFML-2.5.1/lib" />
+					<Add directory="C:/Users/John/Desktop/EPQ/libraries/SFML-2.5.1/bin" />
+					<Add directory="C:/Users/John/Desktop/EPQ/libraries/SFML-2.5.1/include" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-system" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add directory="C:/Users/John/Desktop/EPQ/libraries/SFML-2.5.1/lib" />
+					<Add directory="C:/Users/John/Desktop/EPQ/libraries/SFML-2.5.1/bin" />
+					<Add directory="C:/Users/John/Desktop/EPQ/libraries/SFML-2.5.1/include" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/EPQ" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="headers/draw_header.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="headers/game_loop.h" />
+		<Unit filename="headers/main_variables.h" />
+		<Unit filename="headers/player_class.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
