@@ -14,17 +14,17 @@
 				<Compiler>
 					<Add option="-g" />
 					<Add option="-DSFML_STATIC" />
-					<Add directory="C:/Users/John/Desktop/EPQ/libraries/SFML-2.5.1/lib" />
-					<Add directory="C:/Users/John/Desktop/EPQ/libraries/SFML-2.5.1/bin" />
-					<Add directory="C:/Users/John/Desktop/EPQ/libraries/SFML-2.5.1/include" />
+					<Add directory="../libraries/SFML-2.5.1/bin" />
+					<Add directory="../libraries/SFML-2.5.1/lib" />
+					<Add directory="../libraries/SFML-2.5.1/include" />
 				</Compiler>
 				<Linker>
 					<Add library="sfml-system" />
 					<Add library="sfml-graphics" />
 					<Add library="sfml-window" />
-					<Add directory="C:/Users/John/Desktop/EPQ/libraries/SFML-2.5.1/lib" />
-					<Add directory="C:/Users/John/Desktop/EPQ/libraries/SFML-2.5.1/bin" />
-					<Add directory="C:/Users/John/Desktop/EPQ/libraries/SFML-2.5.1/include" />
+					<Add directory="../libraries/SFML-2.5.1/bin" />
+					<Add directory="../libraries/SFML-2.5.1/lib" />
+					<Add directory="../libraries/SFML-2.5.1/include" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -48,8 +48,11 @@
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Unit filename="headers/game_loop.h" />
+		<Unit filename="headers/level_class.h" />
 		<Unit filename="headers/main_variables.h" />
 		<Unit filename="headers/player_class.h" />
+		<Unit filename="headers/tile_class.h" />
+		<Unit filename="headers/typedefs.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
