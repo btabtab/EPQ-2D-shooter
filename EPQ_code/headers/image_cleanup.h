@@ -15,6 +15,7 @@ sf::Image image_cleanup(sf::Image image_to_clean)
                 image_to_clean.setPixel(x, y, invisible);
         }
     }
+    return image_to_clean;
 }
 
 #endif // IMAGE_CLEANUP_H_INCLUDED

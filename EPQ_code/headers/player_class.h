@@ -21,8 +21,11 @@ public:
         aim_path.setPrimitiveType(sf::Lines);
 
         image.loadFromFile(filename);
-        image_cleanup(image);
+        image = image_cleanup(image);
+        texture.loadFromImage(image);
+        body.setTexture(texture);
 
+        body.setOrigin(image.getSize().x/2, image.getSize().y/2);
     }
 
     void movement()
@@ -42,6 +45,7 @@ public:
 
         aim_path[0].position = sf::Vector2f(sf::Vector2f(sf::Mouse::getPosition(window)));
         aim_path[1].position = sf::Vector2f(position);
+        body.setPosition(position);
 
         std::cout << "x: " << position.x << "/600 y: " << position.y << "/600";
         std::cout << std::endl;
