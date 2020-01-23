@@ -20,6 +20,9 @@ public:
         aim_path.resize(3);
         aim_path.setPrimitiveType(sf::Lines);
 
+        image.loadFromFile(filename);
+        image_cleanup(image);
+
     }
 
     void movement()
@@ -44,7 +47,11 @@ public:
         std::cout << std::endl;
     }
 
-    void render(){window.draw(aim_path);}
+    void render()
+    {
+        window.draw(aim_path);
+        window.draw(body);
+    }
 
 private:
     sf::Vector2f position;

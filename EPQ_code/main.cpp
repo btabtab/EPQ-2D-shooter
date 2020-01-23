@@ -14,7 +14,7 @@
 #include "headers/game_loop.h"
 #include "headers/level_class.h"
 
-Player player(10, 10, 10, sf::Vector2f(300.f, 300.f), "");
+Player player(10, 10, 10, sf::Vector2f(300.f, 300.f), "resources/player_sprite.bmp");
 
 int main()
 {
