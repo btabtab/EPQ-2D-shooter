@@ -6,7 +6,7 @@ class Player
 public:
     Player(){}
 
-    Player(int HP, int Armo, int  ammo, sf::Vector2f new_pos)
+    Player(int HP, int Armo, int  ammo, sf::Vector2f new_pos, str filename)
     {
         /*this constructor will create
         the player entity that will be
@@ -61,6 +61,10 @@ private:
     std::vector <std::string> weapons;
     int ammunition;
     int movespeed = 1; //this is in "tiles per second".
+
+    sf::Image image;
+    sf::Texture texture;
+    sf::Sprite body;
 
     sf::VertexArray bullet;
 
