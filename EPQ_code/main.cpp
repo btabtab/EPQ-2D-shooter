@@ -6,9 +6,12 @@
 #include <SFML/Window.hpp>
 #include <SFML/System.hpp>
 
+#include "headers/typedefs.h"
+
 #include "headers/main_variables.h"
 #include "headers/player_class.h"
 #include "headers/game_loop.h"
+#include "headers/level_class.h"
 
 Player player(10, 10, 10, sf::Vector2f(300.f, 300.f));
 

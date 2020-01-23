@@ -32,7 +32,7 @@ public:
             position.y += movespeed;
 
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::A))
-            position.x -= movespeed;s
+            position.x -= movespeed;
 
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::D))
             position.x += movespeed;
