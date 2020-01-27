@@ -10,7 +10,7 @@ class Level
 public:
     Level(){}
 
-    Level(int floor, int seed)
+    Level(int floor, int seed, str tile)
     {
 
     }

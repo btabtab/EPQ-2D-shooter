@@ -48,12 +48,16 @@
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Unit filename="headers/game_loop.h" />
+		<Unit filename="headers/image_cleanup.h" />
 		<Unit filename="headers/level_class.h" />
 		<Unit filename="headers/main_variables.h" />
 		<Unit filename="headers/player_class.h" />
+		<Unit filename="headers/projectile_class.h" />
 		<Unit filename="headers/tile_class.h" />
 		<Unit filename="headers/typedefs.h" />
+		<Unit filename="include_header.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="sources (non-main)/projectile.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

@@ -6,7 +6,7 @@ class Player
 public:
     Player(){}
 
-    Player(int HP, int Armo, int  ammo, sf::Vector2f new_pos)
+    Player(int HP, int Armo, int  ammo, sf::Vector2f new_pos, str filename)
     {
         /*this constructor will create
         the player entity that will be
@@ -20,6 +20,13 @@ public:
         aim_path.resize(3);
         aim_path.setPrimitiveType(sf::Lines);
 
+        image.loadFromFile(filename);
+        image = image_cleanup(image);
+        texture.loadFromImage(image);
+        body.setTexture(texture);
+
+        body.setScale(0.10f, 0.10f);
+        body.setOrigin(image.getSize().x/2, image.getSize().y/2);
     }
 
     void movement()
@@ -39,12 +46,19 @@ public:
 
         aim_path[0].position = sf::Vector2f(sf::Vector2f(sf::Mouse::getPosition(window)));
         aim_path[1].position = sf::Vector2f(position);
+        body.setPosition(position);
 
         std::cout << "x: " << position.x << "/600 y: " << position.y << "/600";
         std::cout << std::endl;
     }
 
-    void render(){window.draw(aim_path);}
+    void render()
+    {
+        window.draw(aim_path);
+        window.draw(body);
+    }
+
+    coord getPos(){return position;}
 
 private:
     sf::Vector2f position;
@@ -61,6 +75,10 @@ private:
     std::vector <std::string> weapons;
     int ammunition;
     int movespeed = 1; //this is in "tiles per second".
+
+    sf::Image image;
+    sf::Texture texture;
+    sf::Sprite body;
 
     sf::VertexArray bullet;
 

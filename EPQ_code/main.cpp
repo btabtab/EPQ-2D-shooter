@@ -9,11 +9,13 @@
 #include "headers/typedefs.h"
 
 #include "headers/main_variables.h"
+#include "headers/image_cleanup.h"
+#include "headers/projectile_class.h"
 #include "headers/player_class.h"
 #include "headers/game_loop.h"
 #include "headers/level_class.h"
 
-Player player(10, 10, 10, sf::Vector2f(300.f, 300.f));
+Player player(10, 10, 10, sf::Vector2f(300.f, 300.f), "resources/player_sprite.png");
 
 int main()
 {
@@ -27,11 +29,17 @@ int main()
         }
 
         player.movement();
+
+        Projectile test(player.getPos(), coord(sf::Mouse::getPosition()), 300, "resources/base_projectile.bmp");
+
         window.clear();
 
         player.render();
+        test.render();
 
         window.display();
+
+        ptr = NULL;
     }
 
     return 0;
