@@ -425,7 +425,7 @@
 
 1578409266 c:\users\john\desktop\epq\epq_code\headers\game_loop.h
 
-1579793691 source:c:\users\john\documents\github\epq-2d-shooter\epq_code\main.cpp
+1580129154 source:c:\users\john\documents\github\epq-2d-shooter\epq_code\main.cpp
 	<iostream>
 	<string>
 	<vector>
@@ -435,6 +435,7 @@
 	"headers/typedefs.h"
 	"headers/main_variables.h"
 	"headers/image_cleanup.h"
+	"headers/projectile_class.h"
 	"headers/player_class.h"
 	"headers/game_loop.h"
 	"headers/level_class.h"
@@ -848,15 +849,34 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1579731143 c:\users\john\documents\github\epq-2d-shooter\epq_code\headers\typedefs.h
+1580129143 c:\users\john\documents\github\epq-2d-shooter\epq_code\headers\typedefs.h
 
 1579785191 c:\users\john\documents\github\epq-2d-shooter\epq_code\headers\main_variables.h
 
-1579794334 c:\users\john\documents\github\epq-2d-shooter\epq_code\headers\player_class.h
+1580087016 c:\users\john\documents\github\epq-2d-shooter\epq_code\headers\player_class.h
 
 1579600660 c:\users\john\documents\github\epq-2d-shooter\epq_code\headers\game_loop.h
 
 1579785055 c:\users\john\documents\github\epq-2d-shooter\epq_code\headers\level_class.h
 
 1579794019 c:\users\john\documents\github\epq-2d-shooter\epq_code\headers\image_cleanup.h
+
+1580087467 c:\users\john\documents\github\epq-2d-shooter\epq_code\headers\projectile_class.h
+
+1580129173 source:c:\users\john\documents\github\epq-2d-shooter\epq_code\sources (non-main)\projectile.cpp
+
+1580129041 c:\users\john\documents\github\epq-2d-shooter\epq_code\include_header.h
+	<iostream>
+	<string>
+	<vector>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"headers/typedefs.h"
+	"headers/main_variables.h"
+	"headers/image_cleanup.h"
+	"headers/projectile_class.h"
+	"headers/player_class.h"
+	"headers/game_loop.h"
+	"headers/level_class.h"
 

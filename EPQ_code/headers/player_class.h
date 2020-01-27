@@ -25,6 +25,7 @@ public:
         texture.loadFromImage(image);
         body.setTexture(texture);
 
+        body.setScale(0.10f, 0.10f);
         body.setOrigin(image.getSize().x/2, image.getSize().y/2);
     }
 
@@ -56,6 +57,8 @@ public:
         window.draw(aim_path);
         window.draw(body);
     }
+
+    coord getPos(){return position;}
 
 private:
     sf::Vector2f position;
