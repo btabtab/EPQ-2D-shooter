@@ -53,6 +53,7 @@
 		<Unit filename="headers/main_variables.h" />
 		<Unit filename="headers/player_class.h" />
 		<Unit filename="headers/projectile_class.h" />
+		<Unit filename="headers/sound_class.h" />
 		<Unit filename="headers/tile_class.h" />
 		<Unit filename="headers/typedefs.h" />
 		<Unit filename="include_header.h" />
