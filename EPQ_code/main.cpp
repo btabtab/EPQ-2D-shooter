@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <thread>
 
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
@@ -17,6 +18,7 @@
 
 Player player(10, 10, 10, sf::Vector2f(300.f, 300.f), "resources/player_sprite.png");
 
+#include "headers/draw_header.h"
 int main()
 {
     while (window.isOpen())
@@ -32,12 +34,9 @@ int main()
 
         Projectile test(player.getPos(), coord(sf::Mouse::getPosition()), 300, "resources/base_projectile.bmp");
 
-        window.clear();
+        if(sf::Mouse::isButtonPressed(sf::Mouse::Left));
 
-        player.render();
-        test.render();
-
-        window.display();
+        draw();
 
         ptr = NULL;
     }

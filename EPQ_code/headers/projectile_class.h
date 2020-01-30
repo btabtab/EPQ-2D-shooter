@@ -19,30 +19,46 @@ public:
         body.setTexture(texture);
 
         body.setOrigin(image.getSize().x/2, image.getSize().y/2);
+
     }
 
     void render( void ) {window.draw(body);}
 
-    void update(int curr_tick)
+    void launch(coord n_Rstart_P, coord n_Rend_P)
     {
-        if(curr_tick > t_last)
-        {}//update the position.
+        trajectory = n_Rend_P - n_Rstart_P;
 
     }
 
+    void update()
+    {
+        while(life_left > 0)
+        {
+            position += trajectory;
+            body.setPosition(position);
+        }
+    }
+
+    coord getPosition()
+    {
+        return position;
+    }
+
 private:
+    sf::Thread advance()
 
+    coord position;
     coord Rstart_P, Rend_P;
-
     coord c_pos;
-    int life_left;
 
+    sf::Vector2f trajectory;
+
+    int life_left;
     int t_last;
 
     sf::Image image;
     sf::Texture texture;
     sf::Sprite body;
-
 };
 
 #endif // PROJECTILE_CLASS_H_INCLUDED
